@@ -1,0 +1,22 @@
+{
+  "name": "grocery-delivery-setup",
+  "version": "1.0.0",
+  "description": "Setup script for grocery delivery app",
+  "main": "setup.js",
+  "scripts": {
+    "setup-backend": "node setup-backend.js",
+    "setup-frontend": "node setup-frontend.js",
+    "start-gateway": "cd backend_app/gateway && npm start",
+    "start-customer": "cd backend_app/customer && npm start",
+    "start-products": "cd backend_app/products && npm start",
+    "start-shopping": "cd backend_app/shopping && npm start"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "cors": "^2.8.5",
+    "express-http-proxy": "^1.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
